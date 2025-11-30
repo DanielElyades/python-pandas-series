@@ -1,0 +1,29 @@
+# Arquivos e pastas a ignorar no Git
+
+# 1. Ambientes Virtuais (CRUCIAL para Python)
+# O ambiente virtual (.venv, venv, env) contém bibliotecas enormes e 
+# não deve ser versionado, pois cada desenvolvedor cria o seu.
+.venv/
+venv/
+env/
+
+# 2. Arquivos temporários e de cache do Python
+# Estes são arquivos binários que o Python gera internamente.
+__pycache__/
+*.pyc
+*.pyd
+
+# 3. Arquivos de Log e de Dados
+# Se você gera arquivos CSV, Excel ou outros dados (que podem ser grandes)
+# durante a execução e não quer que eles entrem no repositório.
+*.log
+*.csv
+*.xlsx
+
+# 4. Arquivos de configuração de IDEs (Opcional, mas recomendado)
+# Isso evita que o Git rastreie configurações específicas do seu computador/editor.
+.idea/
+.vscode/
+
+# 5. Se estiver usando Jupyter Notebooks
+.ipynb_checkpoints/
