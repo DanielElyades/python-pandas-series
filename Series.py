@@ -15,3 +15,10 @@ alunos = pd.Series(lst_nomes, index=lst_matriculas)
 
 print(notas); print('-' * 20)
 print(alunos)
+print('-' * 20)
+
+# Criar um dicionário
+
+dic_alunos = {'m02' : 'Bob', 'm05' : 'Dayse', 'm06' : 'Cris', 'm07' : 'Jimi'}
+alunos = pd.Series(dic_alunos)
+print(alunos)
