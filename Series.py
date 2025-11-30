@@ -2,5 +2,16 @@
 import pandas as pd
 
 # Cria a series de notas
+
 notas = pd.Series([7.6, 5.0, 8.5, 9.5, 6.4])
-print(notas)
+
+# Cria a Series alunos
+
+lst_matriculas = ['m02', 'm03', 'm04', 'm05', 'm06']
+lst_nomes = ['Bob', 'Dayse', 'Bill', 'Cris', 'Jimi']
+alunos = pd.Series(lst_nomes, index=lst_matriculas)
+
+# Imprime as duas Series
+
+print(notas); print('-' * 20)
+print(alunos)
